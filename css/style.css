@@ -1,0 +1,340 @@
+
+/*general styles*/
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: auto;
+	font-family: 'Montserrat', sans-serif;
+}
+
+span {
+	color: #03a9f4;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+
+h1 {
+	text-transform: uppercase;
+}
+
+h2 {
+	text-align: center;
+	font-weight: 700;
+	font-size: 40px;
+	text-transform: uppercase;
+}
+
+p {
+	line-height: 1.5em;
+	font-weight: 300;
+	font-size: 15px;
+    letter-spacing: 1px;
+    line-height: 30px;
+}
+
+
+section {
+	overflow: auto;
+	padding: 60px;
+}
+
+
+.skew-white { 
+	background-color: #fff;
+	height: 60px;
+	top: -30px;
+	position: relative;
+	transform: skewY(2deg);
+}
+
+.skew-grey { 
+	background-color: #f4f4f4;
+	height: 60px;
+	top: 33px;
+	position: relative;
+	transform: skewY(2deg);
+}
+
+.separator {
+	height: 1px;
+	width: 100px;
+	border-bottom: 5px solid #c1c1c1;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 40px;
+}
+
+/*style end*/
+
+
+#main-nav {
+	background-color: transparent;
+	border: none;
+}
+
+#main-nav ul {
+	text-align: right;
+}
+
+#main-nav ul .menu-item {
+	padding: 15px;
+}
+
+#main-nav ul .menu-item a {
+	color: #fff;
+	text-decoration: none;
+	transition: all .3s;
+	font-size: 1.5em;
+}
+
+#main-nav .menu-item a:hover {
+	color: #03a9f4;
+}
+
+#main-nav.scroll {
+	background-color: rgb(255, 255, 255);
+	
+}
+
+#main-nav.scroll ul .menu-item a {
+	color: #03a9f4;
+}
+
+#main-nav.scroll ul .menu-item a:hover {
+	color: #007ab1;
+}
+/*main menu styles end*/
+
+
+
+/*main header styles start*/
+#main-header {
+	background-image: linear-gradient(to bottom, rgba(27, 77, 134, 0.16), rgba(0, 0, 0, 0.16)), 
+		url(../img/header-background.jpg);
+	background-position: center;
+	background-size: cover;
+	height: 100vh;
+	position: relative;
+}
+
+#main-header .header-caption {
+	position: absolute;
+	top: 34%;
+	transform: translateY(-50%);
+	left: -815px;
+	right: 0;
+	text-align: center;
+	color: #fff;
+	font-family: 'Montserrat', sans-serif;
+	text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
+}
+
+#main-header .header-caption h1 {
+	font-size: 6em;
+	font-weight: 700;
+}
+
+#main-header .header-caption h2 {
+	text-transform: uppercase;
+	font-size: 2.8em;
+	font-weight: 700;
+}
+
+/*main header styles end*/
+
+
+/*about sectionstyles start*/
+
+#about {
+	background-color: #f4f4f4;
+}
+
+#about figure {
+	text-align: center;
+	margin: 0;
+}
+
+#about figure .about-img {
+	max-height: 350px;
+	border-radius: 10px;
+}
+
+/*skile - ikony start*/ 
+#skills figure {
+	display: inline-block;
+	text-align: center;
+}
+
+#skills .skills-icons {
+	text-align: center;
+}
+
+#skills p {
+	text-align: center;
+}
+
+#skills .skills-icons figure figcaption {
+padding: 10px;	
+}
+
+/*skile - ikony stop*/ 
+
+
+/*portfolio style start*/
+#portfolio {
+	background-color: #f4f4f4;
+}
+
+#portfolio .portfolio-items {
+	font-size: 0;
+	text-align: center;
+	
+}
+
+#portfolio .portfolio-items [class*="col-"] {
+	padding: 0;
+}
+
+#portfolio .portfolio-item {
+	height: 350px;
+	font-size: initial; 
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	left: 25vw;
+	color: #fff;
+}
+
+#portfolio .portfolio-item .portfolio-mask {
+	background-color: rgba(47, 110, 160, 0.8);
+	height: 100%;
+	opacity: 0;
+	position: absolute;
+	width: 100%;
+	transition: all .5s;
+}
+
+#portfolio .portfolio-item .portfolio-mask:hover {
+	opacity: 1;
+}
+
+#portfolio .portfolio-item .portfolio-mask .portfolio-content {
+	border: 1px solid #fff;
+	height: 95%;
+	width: 95%;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	margin: auto;
+}
+
+#portfolio .portfolio-item .portfolio-mask .portfolio-content .portfolio-content-inner {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	padding: 5px;
+}
+
+#portfolio .portfolio-item .portfolio-mask .portfolio-content .portfolio-content-inner a {
+	color: #fff;
+	transition: .5s;	
+}
+
+#portfolio .portfolio-item .portfolio-mask .portfolio-content .portfolio-content-inner a:hover {
+	color: #1ac056;
+}
+
+#portfolio-item-1 {
+	background-image: url(../img/wizyt-galeria.jpg);
+}
+
+#portfolio-item-2 {
+	background-image: url(../img/portfolio2.jpg);	
+}
+
+#portfolio-item-3 {
+	background-image: url(../img/portfolio4.jpg);
+}
+/*portfolio style end*/
+
+
+
+
+#contact .social-icons a:hover {
+	background-color: #fff;
+	color: #213b50;
+}
+
+/*contact section styles*/
+
+#contact {
+background-color: #fff;
+color: #000;
+}
+
+#contact {
+  padding-bottom: 50px; 
+}
+
+#contact .contactFlexBox {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    width: 90%; 
+}
+    
+#contact .contactFlexBox .icon {
+      float: left;
+      border: 3px solid #333;
+      font-size: 50px;
+      width: 80px;
+      height: 80px;
+      padding-top: 10px;
+      margin-right: 15px;
+      text-align: center; 
+}
+
+#contact .contactFlexBox .icon:hover {
+    float: left;
+	color: #fff;
+	transition: .5s;
+    background-color: #000;
+    font-size: 50px;
+    width: 80px;
+    height: 80px;
+    padding-top: 10px;
+    margin-right: 15px;
+    text-align: center; 
+}
+
+
+
+#contact .contactFlexBox .icon-description {
+      float: left;
+      margin: 0;
+      font-size: 18px;
+}
+
+   
+#contact a {
+    color: inherit; 
+}
+
+/*footer styles*/
+
+footer {
+	background-color: #000;
+	padding: 0 60px;
+	color: #fff;
+}
+
+footer p {
+	text-align: center;
+	margin: 0;
+}
